@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h3 {
+            display: inline-block;
+            margin: 20px auto 30px;
+            /* top   leftright  bottom*/
+            padding: 20px;
+            /* from all direction*/
+            border: 2px solid red;
+            height: 200px;
+            width: 340px;
+            text-shadow: 1px 1px 1px black;
+        }
+
+        /*
+body {
+  width: 600px;
+  margin: 0 auto;
+  background-color: #ff9500;
+  padding: 0 20px 20px 20px;
+  border: 5px solid black;
+}
+*/
+        .dog {
+            border: 2px dotted red;
+
+        }
+
+        .dog img {
+            display: inline-block;
+            margin-right: 4px;
+            width: 200px;
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <div class="dog">
+        <img src="./images/dog.jpg" alt="Dog" />
+        <h4>German </h4>
+        <img src="https://cdn.shopify.com/s/files/1/1708/4041/files/custom_resized_CG_600x600.jpg?v=1668581089"
+            alt="dog1">
+    </div>
+
+    <h3>
+        ABES Engineering College
+    </h3>
+    <h3>
+        ABES Engineering College
+    </h3>
+
+    <h3 style="box-sizing: border-box;"> <!-- Total width: 340px (specified width) = content width + padding + border
+                                            Total height: 200px (specified height) = content height + padding + border
+                                            The content area will adjust accordingly after minus padding and border size 
+                                            -->
+        Border Box
+    </h3>
+
+    <h3 style="box-sizing: content-box;">
+        Content Box
+    </h3>
+
+
+
+</body>
+
+</html>
