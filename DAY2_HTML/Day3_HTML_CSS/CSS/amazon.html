@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    *{
+        
+        margin:0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+nav{
+    border: 2px solid;
+    background-color:black;
+    height:60px;
+}
+#category-bar{
+height: 40px;
+background-color: rgb(36, 35, 35);
+border: 2px solid;
+}
+
+#carousa{
+width:100vw;
+height: 50vh;
+border: 2px solid;
+}
+.cards-parent{
+    display: flex;;
+    gap: 16px;
+    padding: 16px;
+}
+
+.cards{
+
+    
+    flex-grow: 1;
+    flex-basis: 100px;
+    height: 200px;
+    border: 2px solid green;
+    padding: 16px;;
+
+}
+.card-child-parent{
+display: grid;
+grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+
+border: 1px solid red;
+}
+.cards1{
+    height: fit-content;
+    border: 1px solid black;
+    width: fit-content;
+}
+
+</style>
+</head>
+<body>
+
+    <nav>Nav </nav>
+    <div id="category-bar">Div1</div>
+    
+    <img id="carousa" src="https://f.media-amazon.com/images/G/31/img17/AmazonPay/Siddhi/CBCC-PC_Hero_3000x1200_Prime1_26thJuly_1._CB567303414_.jpg" />
+    
+    <div class="cards-parent">
+<div class="cards">
+   
+    <div class="card-child-parent">
+
+    <div class="cards1">
+        <img src="" />
+        Lorem, ipsum dolor sit amet consectetur adipisicing
+
+    </div>
+<div class="cards1">
+    <img style="padding-left:10px;" src="./images/sec1.png" height="60px" height="60px" /> 
+    Lorem</div>
+<div class="cards1">
+    <img style="padding-left:10px;" src="./images/sec1.png" height="60px" height="600px" /> 
+    Lorem</div>
+<div class="cards1">
+    <img style="padding-left:10px;" src="./images/sec1.png" height="60px" height="60px" /> 
+    Lorem</div>
+
+</div>
+</div>
+<div class="cards">2</div>
+<div class="cards">3</div>
+<div class="cards">4</div>
+
+
+    </div>
+    
+</body>
+</html>

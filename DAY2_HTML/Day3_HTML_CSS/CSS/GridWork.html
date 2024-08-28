@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            border: 1px solid red;
+        }
+
+        .header {
+            border: 1px solid black;
+            height: 800px;
+            grid-column-start: 1;
+            grid-column-end: 13;
+            grid-row: 1 / 2;
+            background-color: cadetblue;
+        }
+
+        /* Row1 - Two equal-sized boxes with gap */
+        .row1 {
+            border: 1px solid black;
+            height: 600px;
+            grid-row: 2 / 3; /* Places this row in the second grid row */
+            grid-column: 1 / -1; /* Span all columns */
+            display: grid; /* Use grid layout for the row1 container */
+            background-color: brown;
+            grid-template-columns: repeat(2, 1fr); /* Define two equal columns */
+            gap: 80px; /* Add some space between items */
+        }
+
+        /* Grid items within row1 */
+        .r11 {
+            border-radius: 20px;
+            height: 500px;
+            background-color:beige;/* Color for visibility */
+            border: 1px solid black; /* Border for visibility */
+            margin: 40px;
+        }
+
+        .row2 {
+            margin-top: 100px;
+            margin-bottom: 100px;
+            border: 1px solid black;
+            height: 100px;
+            grid-column-gap: 4px;
+            grid-row: 3 / 4;
+            grid-column: 1/-1;
+        }
+        
+        .row3{
+            
+            height: 400px;
+            grid-row: 4 / 5; /* Places this row in the second grid row */
+            grid-column: 1 / -1; /* Span all columns */
+            display: grid; /* Use grid layout for the row1 container */
+            
+            grid-template-columns: repeat(3, 1fr); /* Define two equal columns */
+            gap: 30px; /* Add some space between items */
+        }
+
+        .row31 {
+            border-radius: 20px;
+            height: 300px;
+            background-color:white;/* Color for visibility */
+            
+            margin: 40px;
+            
+        }
+
+        .row4 {
+            
+            height: 800px;
+            grid-row: 5 / 6; /* Places this row in the second grid row */
+            grid-column: 1 / -1; /* Span all columns */
+            display: grid; /* Use grid layout for the row1 container */
+            
+            grid-template-columns: repeat(2, 1fr); /* Define two equal columns */
+            gap: 80px; /* Add some space between items */
+        }
+
+        /* Grid items within row1 */
+        .row41 {
+            border-radius: 20px;
+            height: 600px;
+           
+            margin: 40px;
+        }
+
+
+        .row5 {
+            border: 1px solid black;
+            height: 1200px;
+            grid-row: 6/9; /* Places this row in the second grid row */
+            grid-column: 1 / -1; /* Span all columns */
+            
+            display: grid; /* Use grid layout for the row1 container */
+            background-color: black;
+            grid-template-rows: repeat(3, 1fr); /* Define two equal rows*/
+            gap: 20px; /* Add some space between items */
+        }
+
+.row51 {
+
+    border-radius: 20px;
+            height: 500px;
+            background-color:chartreuse;/* Color for visibility */
+            border: 1px solid black; /* Border for visibility */
+            margin: 40px;
+}
+.row52{
+
+    border-radius: 20px;
+            height: 150px;
+            background-color: bisque;/* Color for visibility */
+            border: 1px solid black; /* Border for visibility */
+            margin: 40px;
+}
+
+.row53{
+
+    border-radius: 20px;
+            height: 300px;
+            background-color:chartreuse;/* Color for visibility */
+            border: 1px solid black; /* Border for visibility */
+            margin: 40px;
+}
+
+.footer{
+    border: 1px solid black;
+            height: 1000px;
+            grid-column-start: 1;
+            grid-column-end: 13;
+            grid-row: 9/10;
+            background-color:azure;
+            display: grid;
+            grid-template-rows: 200px 800px;
+}
+.fr1{
+    border: 1px solid chocolate;
+    background-color: cornsilk;
+}
+.fr2{
+
+    border: 1px solid black;
+    background-color: cornflowerblue;
+}
+
+
+.row3img
+{
+padding-left:80px;
+padding-top: 20px;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">H1</div>
+        <div class="header">H2</div>
+        <div class="header">H3</div>
+
+        <!-- Row1 with grid items -->
+        <div class="row1">
+            <div class="r11">R21</div>
+            <div class="r11">R22</div>
+            
+        </div>
+
+        <div class="row2"><marwuee>Commpany name</marwuee></div>
+        
+
+        <div class="row3">
+       
+            <div class="row31">
+
+                <img class="row3img" src="./images/dog.jpg" height="100px" width="100px" alt="img1" />
+            <p>
+                <h2>KYC-Swift and Compliant</h2>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus necessitatibus quibusdam, nam rem possimus ut.
+                 Nesciunt aperiam esse tempore aliquam.
+
+            </p>
+            </div>
+            <div class="row31">
+                
+                <img class="row3img" src="./images/dog.jpg" height="100px" width="100px" alt="img1" />
+            <p>
+                <h2 style="text-align: center;">24/7 Support</h2>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus necessitatibus quibusdam, nam rem possimus ut.
+                 Nesciunt aperiam esse tempore aliquam.
+
+            </p>
+            </div>
+            <div class="row31">
+             
+                <img class="row3img" src="./images/dog.jpg" height="100px" width="100px" alt="img1" />
+            <p>
+                <h2 style="text-align: center;">Seamless API Trading</h2>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus necessitatibus quibusdam, nam rem possimus ut.
+                 Nesciunt aperiam esse tempore aliquam.
+
+            </p>
+
+            </div>
+
+
+        </div>
+       
+        <div class="row4">
+            <div class="row41">
+                
+                <H2 style="text-align: center;">Features You Will Love</H2>
+                
+                <H4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita 
+                    voluptatem consequuntur nesciunt dicta ipsum, veniam quaerat a odio cupiditate delectus!</H4>
+            
+                    <hr style="border: 2px solid;">
+                    <H4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita 
+                        voluptatem consequuntur nesciunt dicta ipsum, veniam quaerat a odio cupiditate delectus!</H4>
+                        <hr>
+                        <H4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita 
+                            voluptatem consequuntur nesciunt dicta ipsum, veniam quaerat a odio cupiditate delectus!</H4>
+                    
+                            <hr>
+                            <H4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita 
+                                voluptatem consequuntur nesciunt dicta ipsum, veniam quaerat a odio cupiditate delectus!</H4>
+                                <hr>
+                                <H4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita 
+                                    voluptatem consequuntur nesciunt dicta ipsum, veniam quaerat a odio cupiditate delectus!</H4>
+                            
+            
+            
+
+            </div>
+            <div class="row41">
+                <img class="row3img" src="./images/phone1.png"height="550x" width="350px"  alt="phone1" />
+            </div>
+           
+        </div>
+
+
+        <div class="row5">
+            <div class="row51">R51</div>
+            <div class="row52">R52</div>
+            <div class="row53">R53</div>
+           
+        </div>
+
+        <div class="footer">
+            <div class="fr1">R51</div>
+            <div class="fr2">R51</div>
+            
+           
+        </div>
+
+
+    </div>
+</body>
+</html>
