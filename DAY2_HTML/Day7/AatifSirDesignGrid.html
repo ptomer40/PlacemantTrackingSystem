@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+.container{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+   
+    background-color: aquamarine;
+    border: 1px solid blue;
+  
+}
+.row1{
+
+    display:grid;
+    grid-column: 1/13;
+    grid-row: 1/2;
+    
+    height: 200px;
+    width: 100%;
+    border: 1px solid red;
+}
+
+.row11{
+
+    background-color: yellowgreen;
+}
+
+
+.row2{
+grid-row: 2/3;
+display:grid;
+grid-template-columns: 10rem 20rem 30rem;
+grid-template-rows: 10rem 10rem 30rem; /*it is not working need to identify*/
+gap: 80px;
+
+
+border: 1px solid red;
+}
+
+.row21{
+
+background-color: yellowgreen;
+border: 1px solid brown ;
+}
+
+.row22{
+
+background-color: rgb(60, 50, 205);
+border: 1px solid rgb(212, 46, 46) ;
+}
+
+
+.row23{
+
+background-color: rgb(205, 174, 50);
+border: 1px solid rgb(174, 168, 168) ;
+}
+
+</style>
+
+
+
+</head>
+<body>
+    
+
+<div class="container">
+<div class="row1">
+    <div class="row11">
+      Header
+    </div>
+    
+</div>
+
+
+<div class="row2">
+    <div class="row21">
+      A
+    </div>
+    
+    <div class="row22">
+       B
+    </div>
+    
+    <div class="row23">
+      C
+    </div>
+    
+
+
+</div>
+
+</div>
+
+
+</body>
+</html>

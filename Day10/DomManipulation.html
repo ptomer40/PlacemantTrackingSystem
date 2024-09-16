@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <div></div>
+
+    <script>
+      
+ const text=document.createElement("p");
+ const text1=document.createElement("h1");
+
+const divisons=document.getElementsByTagName("div"); // return array always
+    divisons[0].append(text,text1); // and appendChild d
+    text.innerText="Heelllo dynamic ";
+    text1.innerText="Hiiiiii ";
+    text.style.color="Green";
+    text.style.fontSize="40px";
+     //text1.remove();// remove
+     divisons[0].removeChild(text1); //another way to remove
+    
+    </script>
+</body>
+</html>

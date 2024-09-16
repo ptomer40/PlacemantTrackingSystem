@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+
+</head>
+
+<body>
+
+    <img alt="logo" />
+    
+    <img alt="logo1" />
+    <!--
+    <h1>Hello Dom</h1>
+    <h1>Hi Dom</h1>
+    <p class="para">Hello Paragraph</p>
+    
+    <ul>
+        <li  id="veg">Carrot</li>
+        <li id="veg">Hello</li>
+        <li class="fruit">Banana</li>
+        <li id="veg">Hi</li>
+        <li class="fruit">Mango</li>
+        
+        </ul>   
+    -->
+
+
+
+    <script>
+   
+
+
+   //console.dir(document);
+   // window.open();\
+   //See HTMLCollection and herichy
+   /* 
+   let data=document.getElementsByTagName("h1");
+    console.log(data);
+    console.log(data[0].innerText);
+    data[1].innerText="Data Chaged Successfully<i>Heyyy</i>";
+    data[0].innerHTML="Data Chaged Successfully <i>Hoooooo</i>";
+
+    //Styling
+    console.log(data[0].style); //style is a object
+    data[0].style.backgroundColor="red";
+    */
+
+    //let data=document.getElementsByClassName("para");
+   // console.log(data);
+
+
+    //let fruit=document.getElementsByClassName("fruit");
+    //console.log(fruit)
+    //let veg=document.getElementById("veg");
+    //console.log(veg)
+    
+    //fruit[0].style.backgroundColor="red";
+    //veg[2].style.backgroundColor="yellow";
+
+     //let res=document.querySelector("div>h1>i"); //works on all selector worked in CSS// specific to element
+     //let res1=document.querySelectorAll("div>h1>i"); //works on all selector worked in CSS// Return complete Node
+
+
+
+//set Attrubute
+let data=document.getElementsByTagName("img");
+console.log(data);
+data[0].setAttribute("src","./phone1.png");
+data[0].setAttribute("height","100");
+data[0].setAttribute("width","100");
+
+data[1].setAttribute("src","./phone1.png");
+data[1].setAttribute("height","200");
+data[1].setAttribute("width","200");
+
+</script>
+</body>
+</html>

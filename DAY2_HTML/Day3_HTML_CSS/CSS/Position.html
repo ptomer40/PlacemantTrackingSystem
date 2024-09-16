@@ -7,7 +7,14 @@
 
 
 <style>
+    .g{
+          
+        height:400px;
+    width:400px;
+    background-color:blueviolet;    
+    }
     .p{
+        margin-top: 100px;
     height:200px;
     width:200px;
     background-color: blanchedalmond;
@@ -21,22 +28,22 @@
 }
 
 .c2{
-position: relative;
-z-index:1;
+position: absolute;
+top: 20px;
+
 }
 
-.c1{
-    position: relative;
-    top:200px
-}
+
     </style>
 
 </head>
 <body>
+    <div class="g">
     <div class="p">
 
         <div class="c1">C1</div>
         <div class="c2">C2</div>
     </div>
+</div>
 </body>
 </html>
